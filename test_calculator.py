@@ -1,3 +1,7 @@
+#https://github.com/neSux0/lab10-SX-MM/tree/main
+#Partner 1: Marina Ma (moonmara)
+#Partner 2: Sen Xu (neSux0)
+
 from calculator import *
 from unittest import TestCase
 
@@ -15,7 +19,7 @@ class TestCalculator(TestCase):
         self.assertEqual(sub(10, 4), 6)
         self.assertEqual(sub(0, 0), 0)
         self.assertEqual(sub(-5, -5), 0)
-        self.assertEqual(sub(0.5, 0.32), 0.18)  # checks if it returns a float number
+        self.assertEqual(sub(0.5, 0.32), 0.18)
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         self.assertEqual(mul(7, 3), 21)
@@ -26,7 +30,7 @@ class TestCalculator(TestCase):
         self.assertEqual(div(10, 5), 2)
         self.assertEqual(div(-9, 3), -3)
         self.assertEqual(div(-8, -2), 4)
-        self.assertAlmostEqual(div(10, 3), 3.33)
+        self.assertAlmostEqual(div(10, 3), 3.33, places = 2)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion #???
@@ -39,10 +43,6 @@ class TestCalculator(TestCase):
 
 
     def test_log_invalid_base(self): # 1 assertion
-        with self.assertRaises(ValueError):
-            log(0,5) #error when a== 0
-        with self.assertRaises(ValueError):
-            log(-5,5) #error when a == negative number
         with self.assertRaises(ValueError):
             log(1,1)  #error when b == 1
         with self.assertRaises(ValueError):

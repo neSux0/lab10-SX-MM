@@ -7,11 +7,11 @@ import math
 def square_root(a):
     try:
         if a < 0:
-            raise ValueError
+            raise ValueError("Cannot take square root of negative number")
         return math.sqrt(a)
     except ValueError as error:
-        print("Cannot take square root of negative number", str(error))
-
+        print("Value Error:", str(error)) #revised
+        raise ValueError #needs to be raised again if we are using the try/execpt
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
