@@ -12,10 +12,11 @@ class TestCalculator(TestCase):
 
     def test_subtract(self): # 3 assertions
     #     fill in code
-        self.assertEqual(sub(10, 4), 6)
-        self.assertEqual(sub(0, 0), 0)
-        self.assertEqual(sub(-5, -5), 0)
-        self.assertEqual(sub(0.5, 0.32), 0.18)  # checks if it returns a float number
+        self.assertEqual(subtract(10, 4), 6)
+        self.assertEqual(subtract(0, 0), 0)
+        self.assertEqual(subtract(-5, -5), 0)
+        self.assertEqual(subtract(0.5, 0.32), 0.18)  # checks if it returns a float number
+
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         self.assertEqual(mul(7, 3), 21)
@@ -34,25 +35,25 @@ class TestCalculator(TestCase):
             div(5, 0)
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(2,8),3)
-        self.assertEqual(log(10,100),2)
-
+        self.assertEqual(logarithm(2,8),3)
+        self.assertEqual(logarithm(10,100),2)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0,5) #error when a== 0
+            logarithm(0,5) #error when a== 0
         with self.assertRaises(ValueError):
-            log(-5,5) #error when a == negative number
+            logarithm(-5,5) #error when a == negative number
         with self.assertRaises(ValueError):
-            log(1,1)  #error when b == 1
+            logarithm(1,1)  #error when b == 1
         with self.assertRaises(ValueError):
-            log(1,-5) #error when b == negative number
+            logarithm(1,-5) #error when b == negative number
+
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError): #error when a == 0
-            log(0, 10)
+            logarithm(0, 10)
         with self.assertRaises(ValueError): #error when a <= 0
-            log(-4, 5)
+            logarithm(-4, 5)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3,4), 5)

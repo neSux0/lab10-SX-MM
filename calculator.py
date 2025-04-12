@@ -10,10 +10,10 @@ import math
 def square_root(a):
     try:
         if a < 0:
-            raise ValueError
+            raise ValueError("Cannot take square root of negative number")
         return math.sqrt(a)
     except ValueError as error:
-        print("Cannot take square root of negative number", str(error))
+        raise ValueError
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
