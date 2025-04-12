@@ -9,7 +9,7 @@ import math
 
 
 def add(a, b):
-    return (a + b) #modification. added paranthesis.
+    return a + b #modification. removed paranthesis.
 
 def subtract(a, b):
     return  a -b
