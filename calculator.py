@@ -1,3 +1,7 @@
+#https://github.com/neSux0/lab10-SX-MM
+#Partner 1: Marina Ma (moonmara)
+#Partner 2: Sen Xu (neSux0)
+
 """
 calculator.py
 - Defines functions used to create a simple calculator

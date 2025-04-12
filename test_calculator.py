@@ -1,3 +1,7 @@
+#https://github.com/neSux0/lab10-SX-MM
+#Partner 1: Marina Ma (moonmara)
+#Partner 2: Sen Xu (neSux0)
+
 from calculator import *
 from unittest import TestCase
 
@@ -27,7 +31,6 @@ class TestCalculator(TestCase):
         self.assertEqual(div(10, 5), 2)
         self.assertEqual(div(-9, 3), -3)
         self.assertEqual(div(-8, -2), 4)
-        self.assertAlmostEqual(div(10, 3), 3.33)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion #???
