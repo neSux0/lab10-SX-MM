@@ -27,13 +27,17 @@ def sub(a, b):
 def mul(a, b):
     return a*b
 
-#divide function deleted
+def div(a,b):
+    if b == 0:
+        raise ValueError("ZeroDivisionError")
+    else:
+        return a/b
 
 def log(a, b):
     if a <= 0 or b <= 1:
         raise ValueError("Domain Error")
     else:
-        math.log(b,a)
+        return math.log(b,a)
 
 def exp(a, b):
     return math.pow(a,b)
