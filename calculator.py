@@ -7,8 +7,9 @@ One function per operation, in order.
 # First example
 import math
 
+
 def add(a, b):
-    return a + b
+    return (a + b) #modification. added paranthesis.
 
 def subtract(a, b):
     return  a -b
