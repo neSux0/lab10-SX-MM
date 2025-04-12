@@ -38,6 +38,7 @@ class TestCalculator(TestCase):
         self.assertEqual(logarithm(2,8),3)
         self.assertEqual(logarithm(10,100),2)
 
+
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
             logarithm(0,5) #error when a== 0
