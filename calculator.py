@@ -1,10 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#https://github.com/neSux0/lab10-SX-MM/tree/main
+#Partner 1: Marina Ma (moonmara)
+#Partner 2: Sen Xu (neSux0)
 
-One function per operation, in order.
-"""
-# First example
 import math
 
 def square_root(a):
