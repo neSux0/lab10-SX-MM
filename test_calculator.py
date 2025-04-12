@@ -1,7 +1,3 @@
-#https://github.com/neSux0/lab10-SX-MM/tree/main
-#Partner 1: Marina Ma (moonmara)
-#Partner 2: Sen Xu (neSux0)
-
 from calculator import *
 from unittest import TestCase
 
